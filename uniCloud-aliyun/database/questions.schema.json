@@ -1,0 +1,62 @@
+{
+	"bsonType": "object",
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"number": {
+			"bsonType": "string",
+			"description": "题号"
+		},
+		"content": {
+			"bsonType": "string",
+			"description": "题目内容"
+		},
+		"answer1": {
+			"bsonType": "string",
+			"description": "答案1",
+			"title": "答案1"
+		},
+		"answer2": {
+			"bsonType": "string",
+			"description": "答案2",
+			"title": "答案2"
+		},
+		"answer3": {
+			"bsonType": "string",
+			"description": "答案3",
+			"title": "答案3"
+		},
+		"answer4": {
+			"bsonType": "string",
+			"description": "答案4",
+			"title": "答案4"
+		},
+		"answer5": {
+			"bsonType": "string",
+			"description": "答案5",
+			"title": "答案5"
+		},
+		"answer": {
+			"bsonType": "string",
+			"description": "答案",
+			"title": "答案"
+		},
+		"parse": {
+			"bsonType": "string",
+			"description": "解析",
+			"title": "解析"
+		},
+		"source": {
+			"bsonType": "string",
+			"description": "来源",
+			"title": "来源"
+		}
+	}
+}
