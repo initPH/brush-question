@@ -1,10 +1,10 @@
 <!--  -->
 <template>
-	<unicloud-db @load="loadData" ref="udb" v-slot:default="{ data, loading, error, options }" collection="questions"
+	<unicloud-db style="padding: 10rpx;" @load="loadData" ref="udb" v-slot:default="{ data, loading, error, options }" collection="questions"
 		:page-size="99999">
 		<swiper :current="current" class="swiper" @change="swiperChange">
 			<swiper-item v-for="(each, swiperIndex) in displayData" :key="swiperIndex">
-				<view class="content">{{ swiperIndex + 1 }}.{{ each.content }}</view>
+				<view class="content">{{ swiperIndex + 1 }}.({{ each.source.slice(0,2) }}){{ each.content }}</view>
 				<view class="answer-area">
 					<!-- <view class="answer-option" v-for="i in 5">{{ each[`answer${i}`] }}</view> -->
 					<radio-group @change="radioChange($event, swiperIndex)" v-if="each.answer.length === 1">
